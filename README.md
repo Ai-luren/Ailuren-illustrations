@@ -79,35 +79,35 @@ Ai路人 Illustrations 是一个 Codex Skill，用来指导 AI Agent 为中文�
 
 ### 两个断点
 
-![两个断点](examples/images/01-two-breakpoints.png)
+![两个断点](examples/images/01-two-breakpoints.webp)
 
 ### 按目的分拣
 
-![按目的分拣](examples/images/02-sort-by-purpose.png)
+![按目的分拣](examples/images/02-sort-by-purpose.webp)
 
 ### 一鱼多吃
 
-![一鱼多吃](examples/images/03-one-fish-many-uses.png)
+![一鱼多吃](examples/images/03-one-fish-many-uses.webp)
 
 ### 承接路径
 
-![承接路径](examples/images/04-handoff-path.png)
+![承接路径](examples/images/04-handoff-path.webp)
 
 ### 信息井
 
-![信息井](examples/images/05-information-well.png)
+![信息井](examples/images/05-information-well.webp)
 
 ### 想法压机
 
-![想法压机](examples/images/06-idea-press.png)
+![想法压机](examples/images/06-idea-press.webp)
 
 ### 内容发酵
 
-![内容发酵](examples/images/07-content-fermentation.png)
+![内容发酵](examples/images/07-content-fermentation.webp)
 
 ### 信任桥
 
-![信任桥](examples/images/08-trust-bridge.png)
+![信任桥](examples/images/08-trust-bridge.webp)
 
 这些图片是风格校准样例，不是构图模板。使用时应该从当前文章重新发明隐喻，不要照抄旧案例的物件和构图。
 
