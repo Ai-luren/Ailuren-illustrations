@@ -203,8 +203,8 @@ Use $ailuren-illustrations 帮我编辑这张图，去掉左上角的“流程�
 │   └── ailuren-ip.png
 ├── examples/
 │   ├── images/
-│   │   ├── 01-two-breakpoints.png
-│   │   ├── 02-sort-by-purpose.png
+│   │   ├── 01-two-breakpoints.webp
+│   │   ├── 02-sort-by-purpose.webp
 │   │   └── ...
 │   └── prompts.md
 └── ailuren-illustrations/
