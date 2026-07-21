@@ -18,24 +18,22 @@
 
 以下是风格校准样例：每张图只表达一个认知锚点，Ai路人承担画面里的核心动作。
 
-<table>
-  <tr>
-    <td><img src="examples/images/01-two-breakpoints.webp" alt="两个断点：在关键位置停下来重新判断" width="100%"></td>
-    <td><img src="examples/images/02-sort-by-purpose.webp" alt="按目的分拣内容" width="100%"></td>
-  </tr>
-  <tr>
-    <td><img src="examples/images/03-one-fish-many-uses.webp" alt="一鱼多吃：同一份内容被重新组织" width="100%"></td>
-    <td><img src="examples/images/04-handoff-path.webp" alt="承接路径：把内容判断交给下一步" width="100%"></td>
-  </tr>
-  <tr>
-    <td><img src="examples/images/05-information-well.webp" alt="信息井：从混乱信息里取出关键内容" width="100%"></td>
-    <td><img src="examples/images/06-idea-press.webp" alt="想法压机：把松散想法压成可用形状" width="100%"></td>
-  </tr>
-  <tr>
-    <td><img src="examples/images/07-content-fermentation.webp" alt="内容发酵：让想法经过时间形成更好的表达" width="100%"></td>
-    <td><img src="examples/images/08-trust-bridge.webp" alt="信任桥：用一块块证据建立承接关系" width="100%"></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="examples/images/01-two-breakpoints.webp" alt="两个断点：在关键位置停下来重新判断" width="48.5%">
+  <img src="examples/images/02-sort-by-purpose.webp" alt="按目的分拣内容" width="48.5%">
+</p>
+<p align="center">
+  <img src="examples/images/03-one-fish-many-uses.webp" alt="一鱼多吃：同一份内容被重新组织" width="48.5%">
+  <img src="examples/images/04-handoff-path.webp" alt="承接路径：把内容判断交给下一步" width="48.5%">
+</p>
+<p align="center">
+  <img src="examples/images/05-information-well.webp" alt="信息井：从混乱信息里取出关键内容" width="48.5%">
+  <img src="examples/images/06-idea-press.webp" alt="想法压机：把松散想法压成可用形状" width="48.5%">
+</p>
+<p align="center">
+  <img src="examples/images/07-content-fermentation.webp" alt="内容发酵：让想法经过时间形成更好的表达" width="48.5%">
+  <img src="examples/images/08-trust-bridge.webp" alt="信任桥：用一块块证据建立承接关系" width="48.5%">
+</p>
 
 这些图片是校准样例，不是构图模板。使用时应从当前文章重新发明隐喻，不照抄旧案例的物件和布局。
 
