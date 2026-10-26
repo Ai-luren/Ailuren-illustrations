@@ -1,165 +1,160 @@
-# Ai路人 Illustrations
-
-> 把中文文章里的一个关键认知动作，画成一张白底、手绘、轻怪诞但清爽的 16:9 正文配图。
-
-<p>
-  <img src="assets/ailuren-ip.png" alt="Ai路人 IP 参考形象" width="132">
+<p align="center">
+  <img src="./assets/readme/hero.svg" alt="Ai路人 Illustrations：把抽象观点，画成一眼能懂的手绘配图。" width="100%">
 </p>
-
-这是一个给 Codex 使用的中文正文配图 Skill。它会先理解文章里的判断、流程、状态或隐喻，再为每张图重新发明一个成立的物理隐喻，而不是把一段文字直接塞进 PPT 式信息图。
-
-<p>
-  <a href="#安装"><img src="https://img.shields.io/badge/Codex-Skill-111111?style=flat-square" alt="Codex Skill"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-ef4444?style=flat-square" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/output-16%3A9%20PNG-f59e0b?style=flat-square" alt="16:9 PNG output">
-</p>
-
-## 先看它能画什么
-
-以下是风格校准样例：每张图只表达一个认知锚点，Ai路人承担画面里的核心动作。
 
 <p align="center">
-  <img src="examples/images/01-two-breakpoints.webp" alt="两个断点：在关键位置停下来重新判断" width="48.5%">
-  <img src="examples/images/02-sort-by-purpose.webp" alt="按目的分拣内容" width="48.5%">
+  <strong>让一个观点，不用解释那么多。</strong><br>
+  专为中文文章、知识内容和方法论设计的 <strong>Codex 正文配图 Skill</strong>。<br>
+  先理解内容，再找到值得画的认知锚点，最后用 Ai路人 IP 把它画出来。
+</p>
+
+<p align="center">
+  <a href="#快速安装"><strong>开始使用</strong></a> &nbsp;·&nbsp;
+  <a href="#看看它如何表达一个观点">浏览画面</a> &nbsp;·&nbsp;
+  <a href="#复制即用">复制提示词</a> &nbsp;·&nbsp;
+  <a href="./examples/prompts.md">更多示例</a>
+</p>
+
+<p align="center">
+  <a href="#快速安装"><img src="https://img.shields.io/badge/Codex-Skill-171717?style=flat-square" alt="Codex Skill"></a>
+  <a href="#画风原则"><img src="https://img.shields.io/badge/Output-16%3A9%20PNG-F27835?style=flat-square" alt="默认输出 16:9 PNG"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-2B7FB0?style=flat-square" alt="MIT License"></a>
+</p>
+
+---
+
+## 看看它如何表达一个观点
+
+不是把段落塞进信息图，而是**让角色做一个动作，让读者看懂一层关系**。
+
+<p align="center">
+  <a href="./examples/images/02-sort-by-purpose.webp"><img src="./examples/images/02-sort-by-purpose.webp" width="100%" alt="示例：Ai路人将一组零散素材按流量、信任、转化三个目的重新整理"></a>
+</p>
+
+<p align="center"><sub>01 / 分拣不是分类标签，而是把内容送去不同的目的地。</sub></p>
+
+<p align="center">
+  <a href="./examples/images/01-two-breakpoints.webp"><img src="./examples/images/01-two-breakpoints.webp" width="49%" alt="双断点：用直观的动作呈现流程中必须停下来判断的时刻"></a>
+  <a href="./examples/images/05-information-well.webp"><img src="./examples/images/05-information-well.webp" width="49%" alt="信息井：用具象动作解释信息获取与提炼"></a>
+</p>
+<p align="center"><sub>02 / 关键断点 &nbsp;&nbsp;&nbsp;&nbsp; 03 / 信息提炼</sub></p>
+
+<p align="center">
+  <a href="./examples/images/06-idea-press.webp"><img src="./examples/images/06-idea-press.webp" width="49%" alt="想法压机：把松散的念头压成可用的结构"></a>
+  <a href="./examples/images/08-trust-bridge.webp"><img src="./examples/images/08-trust-bridge.webp" width="49%" alt="信任桥：用逐步累积的证据建立信任"></a>
+</p>
+<p align="center"><sub>04 / 想法成形 &nbsp;&nbsp;&nbsp;&nbsp; 05 / 信任建立</sub></p>
+
+<details>
+<summary><strong>展开更多风格校准样例（3 张）</strong></summary>
+<br>
+<p align="center">
+  <a href="./examples/images/03-one-fish-many-uses.webp"><img src="./examples/images/03-one-fish-many-uses.webp" width="49%" alt="一鱼多吃：将同一份原材料拆分成不同用途"></a>
+  <a href="./examples/images/04-handoff-path.webp"><img src="./examples/images/04-handoff-path.webp" width="49%" alt="承接路径：角色让信息顺畅抵达下一环节"></a>
 </p>
 <p align="center">
-  <img src="examples/images/03-one-fish-many-uses.webp" alt="一鱼多吃：同一份内容被重新组织" width="48.5%">
-  <img src="examples/images/04-handoff-path.webp" alt="承接路径：把内容判断交给下一步" width="48.5%">
+  <a href="./examples/images/07-content-fermentation.webp"><img src="./examples/images/07-content-fermentation.webp" width="80%" alt="内容发酵：用具象过程表达想法随时间沉淀"></a>
 </p>
-<p align="center">
-  <img src="examples/images/05-information-well.webp" alt="信息井：从混乱信息里取出关键内容" width="48.5%">
-  <img src="examples/images/06-idea-press.webp" alt="想法压机：把松散想法压成可用形状" width="48.5%">
-</p>
-<p align="center">
-  <img src="examples/images/07-content-fermentation.webp" alt="内容发酵：让想法经过时间形成更好的表达" width="48.5%">
-  <img src="examples/images/08-trust-bridge.webp" alt="信任桥：用一块块证据建立承接关系" width="48.5%">
-</p>
+</details>
 
-这些图片是校准样例，不是构图模板。使用时应从当前文章重新发明隐喻，不照抄旧案例的物件和布局。
+> **关于样例：** 上面的 8 张图片是仓库现有的风格校准图，来源与署名见 [NOTICE.md](./NOTICE.md)。它们用来展示画面密度、留白和隐喻表达，**不是固定构图模板，也不代表每次输出都会相同**。
 
-## 它适合解决什么问题
+## 这不是另一套 PPT 插画模板
 
-如果你写的是中文文章、知识内容、方法论或 AI 工作流，希望读者一眼看懂一个抽象判断，这个 Skill 就适合你。
+| 常见做法 | Ai路人 Illustrations 的方法 |
+| --- | --- |
+| 将整段文章浓缩成一页信息图 | 每张图只抓住**一个认知锚点** |
+| 用符号和说明文字解释观点 | 把抽象关系变成**物理动作与隐喻** |
+| 角色只是画面里的摆件 | 让 Ai路人**推动事情发生** |
+| 整篇文章均匀插图 | 只在**理解需要转折**的地方配图 |
 
-它尤其适合：
+适合知识文章、方法论、AI 工作流说明、内容创作与观点表达。不适合商业 KV、精细产品渲染、复杂架构图或需要可编辑矢量源文件的场景。
 
-- 把抽象观点变成具体隐喻
-- 为文章规划 4–8 张有节奏的正文配图
-- 用同一套视觉语言持续制作内容
-- 让 AI 先理解内容，再决定画什么
+## 从一段文字到一张图
 
-它不负责制作商业 KV、儿童卡通、传统 PPT 信息图、复杂架构图或可编辑 SVG。默认产出是 PNG 图片和 shot list，不是 PPTX、PDF 或 Keynote。
+```text
+文章或观点
+   ↓  找出值得解释的地方
+认知锚点
+   ↓  选择一个物理动作和视觉隐喻
+Shot List（配图计划）
+   ↓  让 Ai路人参与核心动作
+16:9 PNG 正文配图
+   ↓  校验风格、中文标注与角色轮廓
+可交付的配图
+```
 
-## 安装
+可以先只做 shot list，确认配图策略后再生成。默认建议为一篇文章挑选 4–8 个关键画面，而不是逐段插图。
+
+## 快速安装
+
+克隆仓库后，只将其中的 **`ailuren-illustrations/`** 目录安装到 Codex 的 Skill 路径：
 
 ```bash
 git clone https://github.com/Ai-luren/Ailuren-illustrations.git
 cd Ailuren-illustrations
-
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -R ./ailuren-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-真正需要安装的是子目录：
+> 根目录的 `README.md`、`examples/`、`NOTICE.md` 等是项目文档和展示素材，无需整体复制到 Skill 目录。
+
+## 复制即用
+
+**方案 A · 直接生成文章配图**
 
 ```text
-ailuren-illustrations/
-```
-
-根目录的 README、`examples/`、`LICENSE` 和 `NOTICE.md` 是 GitHub 展示与说明文档。
-
-## 第一次使用
-
-安装后，在 Codex 中直接调用：
-
-```text
-Use $ailuren-illustrations 为这篇中文文章设计并生成 5 张 Ai路人正文配图。
-要求：16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文批注。
+Use $ailuren-illustrations 为下面这篇中文文章生成 4 张正文配图。
+16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文批注。
+每张只解释一个关键观点，让 Ai路人参与核心动作。
 
 <粘贴文章>
 ```
 
-也可以先只做规划，不生成图片：
+**方案 B · 先规划，不生成图**
 
 ```text
-Use $ailuren-illustrations 先不要生图。
-请分析下面这篇文章哪里值得配图，输出 5 张左右的 shot list。
-每张图写清楚：放在哪段后、主题、核心意思、结构类型、Ai路人在做什么、建议中文标注词。
+Use $ailuren-illustrations 先分析下面的文章，不要生图。
+只挑值得用画面解释的认知锚点，输出约 5 张 shot list。
+说明每张图放在哪里、表达什么、角色在做什么。
 
 <粘贴文章>
 ```
 
-更多可复制示例见 [`examples/prompts.md`](examples/prompts.md)。
+更多场景的完整提示词见 [`examples/prompts.md`](./examples/prompts.md)。
 
-## 工作方式
+## 画风原则
 
-```text
-文章 / 主题
-    ↓
-提炼认知锚点
-    ↓
-输出 shot list
-    ↓
-为每张图重新发明物理隐喻
-    ↓
-生成 16:9 PNG
-    ↓
-检查白底、角色动作、留白、中文批注和风格一致性
-```
-
-每张图只讲一个核心结构。可选结构包括：Workflow、系统局部、前后对比、角色状态、概念隐喻、方法分层、地图路线和小漫画分镜。
-
-## 视觉规则
-
-- 纯白背景，不使用纸纹、米色、渐变和装饰性阴影
-- 黑色细手绘线稿，允许轻微抖动
-- Ai路人是白色圆润人形、黑色椭圆眼；在白底中必须有清楚轮廓
-- 主体约占画面 40%–60%，保留足够留白
-- 只使用少量红、橙、蓝中文批注
-- Ai路人必须参与核心动作，不能只站在画面角落装饰
-- 轻怪诞、有创意、清爽，但不幼稚、不卖萌
-
-## 目录结构
-
-```text
-.
-├── README.md                         # GitHub 对外说明
-├── LICENSE
-├── NOTICE.md                         # 上游来源与署名
-├── assets/                           # GitHub 展示素材
-│   ├── ailuren-ip.png
-│   └── ailuren-qr.jpg
-├── examples/                         # 对外示例与 prompt
-│   ├── images/                       # 压缩后的 showcase WebP
-│   └── prompts.md
-└── ailuren-illustrations/            # 可安装的 Skill
-    ├── SKILL.md
-    ├── agents/openai.yaml
-    ├── assets/examples/              # Skill 内部校准素材
-    └── references/                   # 画风、构图、prompt、QA 规则
-```
-
-## 使用边界与 QA
-
-- 图片里的中文文字越短越稳定；中文错字严重时，优先减少标注词并重生成。
-- 不要把整篇文章做成说明书；一张图只讲一个核心结构。
-- 如果去掉 Ai路人后画面仍然完全成立，说明角色承担的动作还不够明确。
-- 示例图只用于校准线条密度、留白、颜色克制和角色参与方式，不要复刻构图。
-- 生成后检查多余标题、幻觉标签、错字、角色轮廓、白底对比度和风格漂移。
-
-完整规则见：
-
-- [`ailuren-illustrations/SKILL.md`](ailuren-illustrations/SKILL.md)
-- [`style-dna.md`](ailuren-illustrations/references/style-dna.md)
-- [`composition-patterns.md`](ailuren-illustrations/references/composition-patterns.md)
-- [`qa-checklist.md`](ailuren-illustrations/references/qa-checklist.md)
-
-## 来源与许可证
-
-本仓库基于上游开源项目改编，原项目来源和署名信息保留在 [`NOTICE.md`](NOTICE.md)。当前版本围绕 Ai路人 IP 重新定义了角色规则、画风 DNA、prompt 模板和 QA 标准。
-
-MIT License，详见 [`LICENSE`](LICENSE)。
-
-<p>
-  <img src="assets/ailuren-qr.jpg" alt="Ai路人二维码" width="150">
+<p align="center">
+  <img src="./assets/ailuren-ip.png" width="118" alt="Ai路人 IP 参考形象：白色圆润人形、黑色椭圆眼睛、无嘴" />
 </p>
+
+<p align="center"><sub>Ai路人 IP · 白色人形 / 黑色椭圆眼 / 无嘴无衣服</sub></p>
+
+- **底色**：纯白，不添加纸纹、渐变、复杂阴影。
+- **线条**：黑色手绘线稿；以留白构建呼吸感。
+- **强调色**：少量红、橙、蓝；中文批注短而清楚。
+- **构图**：每张图只讲一个结构，主体占比克制。
+- **角色**：Ai路人必须参与关键动作，而非作为装饰。
+
+完整创作规范：[画风 DNA](./ailuren-illustrations/references/style-dna.md) · [构图与原创隐喻](./ailuren-illustrations/references/composition-patterns.md) · [生成检查清单](./ailuren-illustrations/references/qa-checklist.md)。
+
+<details>
+<summary><strong>使用边界与常见问题</strong></summary>
+
+- **能输出 SVG 或 PPT 吗？** 默认输出是 PNG 与 shot list，不提供可编辑 SVG、PPTX 或 Keynote。
+- **中文会出现错字吗？** 生成图像的中文标注可能有误，需人工检查，必要时缩短标注并重新生成。
+- **示例可以直接照画吗？** 不建议。示例用于校准视觉语言，新主题应重新设计隐喻。
+- **角色变成机器人、黑色小人或吉祥物怎么办？** 以 [IP 规则](./ailuren-illustrations/references/ailuren-ip.md) 为准重新校正。
+
+</details>
+
+## 项目文件与来源
+
+- [`ailuren-illustrations/SKILL.md`](./ailuren-illustrations/SKILL.md)：Skill 入口与执行流程。
+- [`ailuren-illustrations/references/`](./ailuren-illustrations/references/)：风格、构图、角色、提示词及验收规范。
+- [`examples/`](./examples/)：校准图与可复制提示词。
+- [`NOTICE.md`](./NOTICE.md)：上游来源、示例署名与改编说明（请保留）。
+- [`LICENSE`](./LICENSE)：MIT License。
+
+<sub>由 Ai路人维护。保留原项目作者及示例图来源署名；改编范围详见 NOTICE。</sub>
